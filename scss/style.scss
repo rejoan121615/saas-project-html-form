@@ -21,11 +21,11 @@ img {
 legend {
     @extend %semiBold-54;
     text-transform: capitalize;
-    font-size: 32px;
-    @include resp($lg) {
-        font-size: 44px;
+    font-size: calc(7vw + 5px);
+    @include resp($sm) {
+        font-size: 52px;
     }
-    @include resp($xxl) {
+    @include resp($lg) {
         font-size: 54px;
     }
 }
@@ -122,17 +122,16 @@ legend {
     width: 100%;
     max-width: 622px;
     background-color: white;
-    padding: 40px 20px;
-    @include resp($lg) {
-        padding: 74px 92px 183px 92px;
-    }
     // logo inside form
     .logo-wrap {
         width: 100%;
         max-width: 345px;
         margin-bottom: 30px;
         @extend %mx-auto;
-        // margin-bottom: 70px;
+        @include resp ($lg) {
+
+            margin-bottom: 70px;
+        }
         img {
             width: 100%;
         }
@@ -190,12 +189,18 @@ legend {
     .container {
         position: relative;
         z-index: 10;
-
         max-width: 1200px;
 
         // form wrap
         .form-wrap {
             margin-left: auto;
+            padding: 40px 20px;
+            @include resp($sm) {
+                padding: 40px 50px 183px 50px;
+            }
+            @include resp($md) {
+                padding: 74px 92px 183px 92px;
+            }
         }
     }
 }
