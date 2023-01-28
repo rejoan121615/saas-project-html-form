@@ -1,0 +1,39 @@
+%semiBold-54 {
+    font-family: $poppin;
+    font-weight: 600;
+    font-size: 54px;
+    letter-spacing: 0;
+    line-height: 81px;
+    color: $c-1f1f1f;
+}
+
+%semiBold-19 {
+    font-family: $poppin;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 0;
+    line-height: 29px;
+    color: $c-363636;
+}
+
+%regular-15 {
+    font-family: $poppin;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 23px;
+    color: $c-1f1f1f;
+}
+
+%lightItalic-15 {
+    @extend %regular-15;
+    font-weight: 300;
+    font-style: italic;
+    color: $c-b4b4b4;
+}
+
+%medium-15 {
+    @extend %regular-15;
+    font-weight: 500;
+    color: #ffffff;
+}

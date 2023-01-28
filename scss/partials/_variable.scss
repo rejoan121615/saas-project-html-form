@@ -1,0 +1,34 @@
+// colors
+:root {
+    --1f1f1f: #1f1f1f;
+    --363636: #363636;
+    --f6f6f6: #f6f6f6;
+    --e3e8ec: #e3e8ec;
+    --474747: #474747;
+    --dbe3f6: #dbe3f6;
+    --e4730c: #e4730c;
+    --d13f04: #d13f04;
+    --002f59: #002f59;
+    --b4b4b4: #b4b4b4;
+}
+
+// color variable
+$c-1f1f1f: #1f1f1f;
+$c-363636: #363636;
+$c-f6f6f6: #f6f6f6;
+$c-e3e8ec: #e3e8ec;
+$c-474747: #474747;
+$c-dbe3f6: #dbe3f6;
+$c-e4730c: #e4730c;
+$c-d13f04: #d13f04;
+$c-002f59: #002f59;
+$c-b4b4b4: #b4b4b4;
+// fonts
+$poppin: "Poppins", sans-serif;
+
+// break points
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

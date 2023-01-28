@@ -1,0 +1,67 @@
+@import "./partials/links";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// common style
+a,
+img {
+    display: inline-block;
+}
+
+// common component
+legend {
+    @extend %semiBold-54;
+    text-transform: capitalize;
+}
+
+.field-info {
+    margin-bottom: 15px;
+    h6 {
+        @extend %semiBold-19;
+    }
+    p {
+        @extend %regular-15;
+    }
+}
+
+.input-group {
+  label {
+    @extend %semiBold-19;
+    margin-bottom: 4px;
+  }
+  input {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding-left: 13.5px;
+    @extend %lightItalic-15;
+    color: var(--b4b4b4);
+  }
+}
+
+
+
+.form-wrap {
+    width: 100%;
+    max-width: 622px;
+    background-color: white;
+    padding: 74px 92px 183px 92px;
+    // logo inside form
+    .logo-wrap {
+        width: 100%;
+        max-width: 345px;
+        margin-bottom: 70px;
+        img {
+            width: 100%;
+        }
+    }
+    legend {
+        margin-bottom: 46px;
+    }
+}
+// form style
