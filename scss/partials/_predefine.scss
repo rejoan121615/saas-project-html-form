@@ -37,3 +37,22 @@
     font-weight: 500;
     color: #ffffff;
 }
+
+%flex-col {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    & > * {
+        width: 100%;
+    }
+}
+
+
+%flex-row {
+    @extend %flex-col;
+    flex-direction: row;
+    align-items: center;
+}
+
+
