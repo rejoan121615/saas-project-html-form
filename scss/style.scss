@@ -29,22 +29,20 @@ legend {
 }
 
 .input-group {
-  label {
-    @extend %semiBold-19;
-    margin-bottom: 4px;
-  }
-  input {
-    width: 100%;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    padding-left: 13.5px;
-    @extend %lightItalic-15;
-    color: var(--b4b4b4);
-  }
+    label {
+        @extend %semiBold-19;
+        margin-bottom: 4px;
+    }
+    input {
+        width: 100%;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        padding-left: 13.5px;
+        @extend %lightItalic-15;
+        color: var(--b4b4b4);
+    }
 }
-
-
 
 .form-wrap {
     width: 100%;
