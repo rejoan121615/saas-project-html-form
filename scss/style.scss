@@ -13,15 +13,28 @@ img {
 }
 
 // common component
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 legend {
     @extend %semiBold-54;
     text-transform: capitalize;
+    font-size: 32px;
+    @include resp($lg) {
+        font-size: 44px;
+    }
+    @include resp($xxl) {
+        font-size: 54px;
+    }
 }
 
 .field-info {
     margin-bottom: 15px;
     h6 {
         @extend %semiBold-19;
+        text-transform: capitalize;
     }
     p {
         @extend %regular-15;
@@ -50,14 +63,14 @@ legend {
             border: 1px solid $c-707070;
         }
         button {
-            background-color: transparent;
+            background-color: white;
             border: none;
             font-size: 22px;
             width: 30px;
             height: 30px;
             position: absolute;
             right: 10px;
-            top: 10px;
+            top: 8px;
             cursor: pointer;
             span {
                 color: $c-707070;
@@ -93,7 +106,7 @@ legend {
     }
 }
 
-// buttons 
+// buttons
 .btn {
     border: none;
     height: 44px;
@@ -109,12 +122,17 @@ legend {
     width: 100%;
     max-width: 622px;
     background-color: white;
-    padding: 74px 92px 183px 92px;
+    padding: 40px 20px;
+    @include resp($lg) {
+        padding: 74px 92px 183px 92px;
+    }
     // logo inside form
     .logo-wrap {
         width: 100%;
         max-width: 345px;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
+        @extend %mx-auto;
+        // margin-bottom: 70px;
         img {
             width: 100%;
         }
@@ -122,15 +140,62 @@ legend {
     legend {
         margin-bottom: 46px;
     }
-    // password checkbox 
+    // password checkbox
     .check-list {
         margin-top: 58px;
         margin-bottom: 30px;
     }
-    // continue btn 
+    // continue btn
     .btn-wrap {
         width: 100%;
         margin-top: 48px;
     }
 }
 
+// reset password ---------------------------------------
+#reset-password {
+    background: transparent url("../images/background.png") no-repeat center
+        center;
+    background-size: cover;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include resp($xl) {
+        // background-size: 100% 100%;
+    }
+    &::after,
+    &::before {
+        content: "";
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        left: 0px;
+        background-color: $c-002f59;
+        @include resp($lg) {
+            height: 60px;
+        }
+        @include resp($xl) {
+            height: 70px;
+        }
+    }
+
+    &::after {
+        top: 0px;
+    }
+
+    &::before {
+        bottom: 0px;
+    }
+    // background-color: ;
+    .container {
+        position: relative;
+        z-index: 10;
+
+        max-width: 1200px;
+
+        // form wrap
+        .form-wrap {
+            margin-left: auto;
+        }
+    }
+}
